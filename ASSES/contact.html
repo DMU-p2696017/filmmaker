@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Krzysztof moviemaker</title>
+    <style>
+        p{
+         font-family: Arial, Helvetica, sans-serif;
+         font-weight: normal; 
+         font-size: 20px;
+         color: black;
+         text-align: left;
+         padding: 10px;
+         margin: 10px;
+        }
+    img{
+       display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        padding: 10px;
+    }
+    video{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        padding: 20px;
+    }
+    audio{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+
+    .item {
+        font-size: 20pt;
+        font-weight: bold;   
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #ababc6;
+        flex-grow: 1;
+        padding: 10px;
+        }
+    .container{
+        display: flex; gap: 10px 20px; 
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        background-color: coral;
+        padding: 10px;
+     }   
+     
+     #header {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        flex-grow: 1;
+
+     }
+     #item2 {
+        font-family: Arial, Helvetica, sans-serif;
+        flex-grow: 1;
+        background-color: yellowgreen;
+     }
+
+     #item3 {
+        font-family: Arial, Helvetica, sans-serif;
+        flex-grow: 1;
+        background-color: rgb(255, 255, 255);
+    }
+    #item4 {
+           
+        background-color: coral;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        flex-grow: 1;       
+        justify-items: space-around;
+     }
+     #item5 {
+        width:33%;
+       background-color: coral;
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        flex-grow: 1;       
+        justify-items: space-around;
+        padding: 10px;
+     }
+     #item6 {
+        background-color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;            
+        justify-items: center;
+        justify-content: center;
+        flex-grow: 1; 
+        flex-direction: column;  
+        padding: 10px;
+     }
+    </style>
+  </head>
+  
+  <body>
+    <audio controls autoplay>
+        <source src="sound/Teasing the King - Nathan Moore.mp3" type='audio/mpeg'/>
+        <source src="sound/Teasing the King - Nathan Moore.ogg" type='audio/ogg'/>
+        <source src="sound/Teasing the King - Nathan Moore.wav" type='audio/wav'/>
+        Your browser does not support the audio element.
+      </audio>
+
+    <div class="container" id="header">
+    <header>
+        <div class="header">
+        <a href="index.html">   
+        <img src="img/Krzysztof Trznadel (1).png" alt="Krzysztof Trznadel Logo" style="max-width: 15%; border-radius: 50%;">
+        </a>
+        </div>
+        <div class="header">
+            <h1>Krzysztof Trznadel</h1>
+            <h2>official filmmaker's website</h2>
+        </div>
+        </header>
+    </div>
+    
+
+    <div class="container">
+        <a href="index.html">
+        <div class="item">Home</div>
+        </a>
+        <a href="film.html">
+            <div class="item" id="item2">Films</div>
+        </a>
+        <a href="contact.html">
+            <div class="item">Contact</div>
+        </a>
+    </div>
+    
+        
+
+    </header>
+  
+      
+    <br><br>
+    <img src="img/KrysztofT.png" alt="KT" style= "max-width: 100%; border-radius: 10%;"/>
+           
+    <div class="container" id="item6">    
+    <p>    
+        If you want to share your opinion, collaborate or just ask about my art, don't hesitate to send me a message. </p>
+        
+       
+        <p id="email" style="display:none">krisblogarea@gmail.com</p>
+
+<button type="button" onclick="document.getElementById('email').style.display='block'">Click to see email address!</button>
+        <br><br>
+
+    </div>
+<footer>
+    <div class="container" id="item4">
+         
+        <div class="item" id="item5"><br><br> copyright (2023)<br>Krzysztof Trznadel</div>
+            
+        <div class="item" id="item5">
+            <a href="https://www.youtube.com/@krzysztoftrznadel7301/featured">
+                <img  src="img/YTico.PNG" 
+                alt="Krzysztof's YT channel" 
+                style="max-width: 20%; border-radius: 50%;">
+            </img>
+            </a>            
+        </div>
+        <div class="item" id="item5">
+            <a href="#header">
+            <img 
+            src="img/arrow up.png"        
+            style="max-width: 10%; border-radius: 50%;">Go up.
+            </img>
+        </a>
+       
+        </div>    
+ 
+
+
+    </div>
+</footer>
+
+  </body>
+</html>
